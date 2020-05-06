@@ -1,21 +1,6 @@
 #include <iostream>
 #include <cmath>
 
-
-
-// Function Definition and Declaration
-double multiply(double x, double y)
-{
-    return x * y;
-}
-
-/* IMPORTANT order of operations counts */
-void print_pow(double newBase, int newExponent)
-{
-    double mult = multiply(newBase, newExponent);
-    std::cout << newBase << " multiplied by " << newExponent << " equals " << mult << std::endl;
-}
-
 // Function Declaration only - Definition at bottom
 int data(int, int);
 
@@ -28,6 +13,20 @@ double flower(double x, int y)
     }
     return result;
 }
+
+// Function Definition and Declaration
+double multiply(double x, double y)
+{
+    return x * y;
+}
+
+// IMPORTANT: Compiler reads top to bottom, so multiple function called here must first be Defined above
+void print_pow(double newBase, int newExponent)
+{
+    double mult = multiply(newBase, newExponent);
+    std::cout << newBase << " multiplied by " << newExponent << " equals " << mult << std::endl;
+}
+
 
 int main()
 {   
