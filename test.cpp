@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <math.h>
 int main()
 {
     using std::cout;
@@ -18,7 +18,10 @@ int main()
     std::cout << "What day is it today? ";
     std::cin >> question;
     std::cout << "Today is " << question << std::endl;
-    
+
+    int x = pow(10,2);
+    std::cout << x << std::endl;
+
     return 0;
 }
 
