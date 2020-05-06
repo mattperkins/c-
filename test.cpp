@@ -14,6 +14,11 @@ int main()
     std::cin >> myNum; 
     cout << "Your favourite number is " << myNum << std::endl;
 
+    std::string question;
+    std::cout << "What day is it today? ";
+    std::cin >> question;
+    std::cout << "Today is " << question << std::endl;
+    
     return 0;
 }
 
