@@ -10,6 +10,16 @@ double multiply(double x, double y)
 // Function Declaration only - Definition at bottom
 int data(int, int);
 
+double flower(double x, int y)
+{
+    double result = 3;
+    for(int i = 0; i < y; i++)
+    {
+        result = result * x;
+    }
+    return result;
+}
+
 int main()
 {   
     using std::cout;
@@ -51,6 +61,9 @@ int main()
     
     int dataResult = data(5,5);
     cout << "DATA = " << dataResult << endl;
+    
+    double bloom = flower(10, 3);
+    cout << "POWER = " << bloom << endl;
 
     return 0;
 }
