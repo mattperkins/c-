@@ -10,8 +10,9 @@ int main()
   printf("%i\n", slices); // alternate logging method 
 
   int myNum ;
+  std::cout << "What is your favourite number? ";
   std::cin >> myNum; 
-  cout << "The total equals " << myNum << std::endl;
+  cout << "Your favourite number is " << myNum << std::endl;
 
   return 0;
 }
