@@ -6,3 +6,11 @@
 ```
   ./a.out
 ```
+
+
+
+
+- header files
+  - declarations
+- object code
+  - definitions

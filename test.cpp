@@ -2,6 +2,8 @@
 #include <math.h>
 int main()
 {
+    int multiply(int,int);
+    
     using std::cout;
     int slices;
     slices = 5;
@@ -23,6 +25,12 @@ int main()
     std::cout << x << std::endl;
 
     return 0;
+
+    int multiply(int x, int y)
+    {
+        return x * y
+    }    
+    std::cout << multiply(5,5) << std::endl;
 }
 
 void test()
