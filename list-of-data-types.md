@@ -1,0 +1,27 @@
+-   literals
+    -   5
+-   integral
+    -   16/32 bit(binary)
+    -   unsigned number = positive
+    -   signed number = negative
+        -   short (16)
+        -   int (16/32)
+        -   long (32)
+        -   long long (64)
+-   string
+    -   characters
+-   char
+    -   characters
+-   floating point
+    -   double
+    -   bool
+    -   true / false
+    -   arrays
+    -   list
+    -   classes
+        -   custom types
+        -   objects
+-   structs - custom types
+-   vectors
+-   pointers
+-   innumerations
