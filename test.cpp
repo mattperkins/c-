@@ -5,7 +5,7 @@ int main()
   using std::cout;
   int slices;
   slices = 5;
-  cout << "hello,world\n" << slices << "\n";
+  cout << "The number equals " << slices << " correct" << std::endl;
   return 0;
 }
 
