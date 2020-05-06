@@ -1,10 +1,19 @@
 #include <iostream>
 #include <cmath>
 
+
+
 // Function Definition and Declaration
 double multiply(double x, double y)
 {
     return x * y;
+}
+
+/* IMPORTANT order of operations counts */
+void print_pow(double newBase, int newExponent)
+{
+    double mult = multiply(newBase, newExponent);
+    std::cout << newBase << " multiplied by " << newExponent << " equals " << mult << std::endl;
 }
 
 // Function Declaration only - Definition at bottom
@@ -65,13 +74,12 @@ int main()
     double bloom = flower(10, 3);
     cout << "POWER = " << bloom << endl;
 
+    print_pow(10,3);
+    print_pow(1,9);
+    print_pow(15,30);
+
     return 0;
 }
-
-void test()
-{
-    std::cout << "test";
-}   
 
 // Function Definition only - Declaration at top
 int data(int x, int y)
