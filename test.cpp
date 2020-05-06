@@ -35,7 +35,8 @@ int main()
     cin >> base;
     cout << "Provide exponent ";
     cin >> exponent;
-    cout << pow(base,exponent) << endl;
+    double power = pow(base,exponent);
+    cout << power << endl;
 
     return 0;
 
