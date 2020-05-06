@@ -5,7 +5,9 @@ int main()
     int multiply(int,int);
     
     using std::cout;
+    using std::cin;
     using std::endl;
+
     int slices;
     slices = 5;
     cout << "The number equals " << slices << " correct" << std::endl;
@@ -27,6 +29,13 @@ int main()
 
     int x = pow(10,2);
     std::cout << x << std::endl;
+
+    int base, exponent;
+    cout << "Provide base ";
+    cin >> base;
+    cout << "Provide exponent ";
+    cin >> exponent;
+    cout << pow(base,exponent) << endl;
 
     return 0;
 
