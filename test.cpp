@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 int main()
 {
     int multiply(int,int);
@@ -26,11 +26,11 @@ int main()
 
     return 0;
 
-    int multiply(int x, int y)
-    {
-        return x * y
-    }    
-    std::cout << multiply(5,5) << std::endl;
+    // int multiply(int x, int y)
+    // {
+    //     return x * y
+    // }    
+    // std::cout << multiply(5,5) << std::endl;
 }
 
 void test()
