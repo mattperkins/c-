@@ -1,9 +1,17 @@
 #include <iostream>
 #include <cmath>
-int main()
+
+// Function Definition and Declaration
+double multiply(double x, double y)
 {
-    int multiply(int,int);
-    
+    return x * y;
+}
+
+// Function Declaration only - Definition at bottom
+int data(int, int);
+
+int main()
+{   
     using std::cout;
     using std::cin;
     using std::endl;
@@ -38,16 +46,22 @@ int main()
     double power = pow(base,exponent);
     cout << power << endl;
 
-    return 0;
+    double result = multiply(14.2,17.625); 
+    cout << "RESULT = " << result << endl;
+    
+    int dataResult = data(5,5);
+    cout << "DATA = " << dataResult << endl;
 
-    // int multiply(int x, int y)
-    // {
-    //     return x * y
-    // }    
-    // std::cout << multiply(5,5) << std::endl;
+    return 0;
 }
 
 void test()
 {
     std::cout << "test";
+}   
+
+// Function Definition only - Declaration at top
+int data(int x, int y)
+{
+    return x + y;
 }
