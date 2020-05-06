@@ -5,6 +5,7 @@ int main()
     int multiply(int,int);
     
     using std::cout;
+    using std::endl;
     int slices;
     slices = 5;
     cout << "The number equals " << slices << " correct" << std::endl;
@@ -20,6 +21,9 @@ int main()
     std::cout << "What day is it today? ";
     std::cin >> question;
     std::cout << "Today is " << question << std::endl;
+
+    cout << pow(1,1);
+    cout << endl;
 
     int x = pow(10,2);
     std::cout << x << std::endl;
