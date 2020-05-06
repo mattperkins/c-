@@ -6,6 +6,9 @@ int main()
   int slices;
   slices = 5;
   cout << "The number equals " << slices << " correct" << std::endl;
+
+  printf("%i\n", slices);
+
   return 0;
 }
 
