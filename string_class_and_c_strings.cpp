@@ -26,4 +26,15 @@ int main()
     // b,e,t,t,y and \0 (the null terminating character)
     // if reassigned will display the following error:
     // array type 'char [6]' is not assignable
+
+    // std::cin stops at first space in string
+    // string user;
+    // cin >> user; // if user inputs: 'hello world'
+    // cout << user << endl; // only 'hello' is output
+
+    // getline function allows multiple words and spaces
+    string sentence;
+    getline(cin, sentence);
+    cout << sentence << endl;
+
 }
