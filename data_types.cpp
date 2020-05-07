@@ -3,6 +3,7 @@
 
 using std::cout;
 using std::endl;
+using std::string;
 
 int main()
 {   
@@ -93,4 +94,13 @@ int main()
     /* 
         unicode: char16_t and char32_t are char data types which extend memory for characters beyond the above. (example: for international languages) 
     */
+
+    /* bool : true or false */
+    bool one = 1;
+    bool negative_one = -1;
+    bool zero = 0;
+
+    cout << one << endl;// true 
+    cout << negative_one << endl; // true 
+    cout << zero << endl; // false
 }   
