@@ -1,5 +1,5 @@
 #include <iostream>
-#include <climits>
+#include <float.h>
 
 using namespace std;
 /* 
@@ -126,10 +126,16 @@ int main()
     // if(is_true) cout << "This is true" << endl;
 
     /* Floating Point and Numbers */
-    /* Float and Double */
-
-    float _float;
+    /* float, double long double */
     
+    float ten_divide_three = 10.0 / 3;
+    cout << ten_divide_three << endl;
+    ten_divide_three = ten_divide_three * 10000000000;
+    cout << ten_divide_three << endl;
+    cout << fixed << ten_divide_three << endl;
+    
+    // 7.7E4 means float the decimal point to the right 4 places
+    // so 7.7 becomes 77000.
     double seventy_seven_thousand1 = 77000; // same as 7.7 x (10 ^ 4)
     double seventy_seven_thousand2 = 7.7E4; // same as 7.7 x (10 ^ 4)
     cout << seventy_seven_thousand1 << endl;
@@ -137,4 +143,7 @@ int main()
 
     long double _long_double;
 
+    cout << FLT_DIG << endl; // float = 6 digit accuracy
+    cout << DBL_DIG << endl; // double = 15 digit accuracy
+    cout << LDBL_DIG << endl; // long double = 18 digit accuracy
 }   
