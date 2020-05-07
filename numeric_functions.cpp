@@ -41,5 +41,5 @@ int main()
     cout << round(3.51) << endl; // round value to 4 (rounds up)
     cout << round(-3.49) << endl; // round value to -3 (crops down)
     cout << round(-3.51) << endl; // round value to -4 (rounds up)
-
+    /* use nearby int function if round not suitable */
 }
