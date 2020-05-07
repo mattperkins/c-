@@ -97,10 +97,20 @@ int main()
 
     /* bool : true or false */
     bool one = 1;
+    bool nine_seven_one = 971;
     bool negative_one = -1;
+    bool negative_four = -4;
+    bool is_true = true;
+    
     bool zero = 0;
+    bool is_false = false;
 
     cout << one << endl; // true (logged as 1)
+    cout << nine_seven_one << endl; // true (logged as 1)
     cout << negative_one << endl; // true (logged as 1)
+    cout << negative_four << endl; // true (logged as 1)
+    cout << is_true << endl; // (logged as 1)
+
+    cout << is_false << endl; // (logged as 0)
     cout << zero << endl; // false (logged as 0)
 }   
