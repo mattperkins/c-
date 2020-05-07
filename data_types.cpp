@@ -5,7 +5,9 @@ using std::cout;
 using std::endl;
 
 int main()
-{
+{   
+    /* INTEGRAL DATA TYPE */
+
     /* signed */
     short a; 
     int b;
@@ -14,7 +16,7 @@ int main()
     
     /*  short <= int <= long <= long long */
 
-    /* positive values only */
+    /* 'unsigned' = positive values only */
     unsigned short aa;
     unsigned int bb;
     unsigned long cc;
@@ -32,6 +34,7 @@ int main()
     cout << sizeof(unsigned long) << endl;
     cout << sizeof(unsigned long long) << endl;
 
+    /* uses #include <climits> at top of file */
     cout << SHRT_MAX << endl;
     cout << SHRT_MIN << endl;
     /* unsigned version */
@@ -39,5 +42,19 @@ int main()
 
     cout << INT_MAX << endl;
     cout << INT_MIN << endl;
+    /* unsigned version */
+    cout << UINT_MAX << endl;
 
-}
+    cout << LONG_MAX << endl;
+    cout << LONG_MIN << endl;
+    /* unsigned version */
+    cout << ULONG_MAX << endl;
+
+    cout << LLONG_MAX << endl;
+    cout << LLONG_MIN << endl;
+    /* unsigned version */
+    cout << ULLONG_MAX << endl;
+
+    /* CHAR DATA TYPE */
+    
+}   
