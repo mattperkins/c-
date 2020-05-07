@@ -1,6 +1,8 @@
 #include <iostream>
 #include <float.h>
 
+#define X 10 // (C language format) Constant that is globally scoped
+
 using namespace std;
 /* 
 using std::cout;
@@ -76,9 +78,9 @@ int main()
     cout << Z << endl;
     cout << (int) Z << endl; // cast as Int
 
-    signed char X = 88; // 88 equivalent to X on ascii table
-    cout << X << endl;
-    cout << (int) X << endl;
+    signed char Y = 88; // 88 equivalent to X on ascii table
+    cout << Y << endl;
+    cout << (int) Y << endl;
 
     signed char B = 66; // 66 equivalent to B on ascii table
     cout << B << endl;
@@ -147,4 +149,14 @@ int main()
     cout << DBL_DIG << endl; // double = 15 digit accuracy
     cout << LDBL_DIG << endl; // long double = 18 digit accuracy
     /* If 18 points of accuracy aren't enough, as with something like banking, import an 'exact precision' library to guarantee every number is accurate. */
+
+    /* use 'float' if memory is limited, 'double' otherwise when fractional amounts are required or use 'int' */
+
+    /* Constants: const, macro and enum */
+    int s = 5; // literal constant
+    const int SS = 5; /* symbolic constant (immutable/read only) */
+
+    cout << X << endl; // defined at top of file (C format)
+
+    
 }   
