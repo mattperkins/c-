@@ -100,7 +100,7 @@ int main()
     bool negative_one = -1;
     bool zero = 0;
 
-    cout << one << endl;// true 
-    cout << negative_one << endl; // true 
-    cout << zero << endl; // false
+    cout << one << endl; // true (logged as 1)
+    cout << negative_one << endl; // true (logged as 1)
+    cout << zero << endl; // false (logged as 0)
 }   
