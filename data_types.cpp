@@ -126,4 +126,15 @@ int main()
     // if(is_true) cout << "This is true" << endl;
 
     /* Floating Point and Numbers */
+    /* Float and Double */
+
+    float _float;
+    
+    double seventy_seven_thousand1 = 77000; // same as 7.7 x (10 ^ 4)
+    double seventy_seven_thousand2 = 7.7E4; // same as 7.7 x (10 ^ 4)
+    cout << seventy_seven_thousand1 << endl;
+    cout << seventy_seven_thousand2 << endl;
+
+    long double _long_double;
+
 }   
