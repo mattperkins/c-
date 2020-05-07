@@ -1,9 +1,12 @@
 #include <iostream>
 #include <climits>
 
+using namespace std;
+/* 
 using std::cout;
 using std::endl;
 using std::string;
+*/
 
 int main()
 {   
@@ -101,9 +104,11 @@ int main()
     bool negative_one = -1;
     bool negative_four = -4;
     bool is_true = true;
+    bool print_true = true;
     
     bool zero = 0;
     bool is_false = false;
+    bool print_false = false;
 
     cout << one << endl; // true (logged as 1)
     cout << nine_seven_one << endl; // true (logged as 1)
@@ -113,4 +118,9 @@ int main()
 
     cout << is_false << endl; // (logged as 0)
     cout << zero << endl; // false (logged as 0)
+
+    /* boolalpha : prints true or false instead of 1 or 0 */
+    cout << boolalpha << print_true << endl;
+    cout << boolalpha << print_false << endl;
+
 }   
