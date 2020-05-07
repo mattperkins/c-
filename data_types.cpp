@@ -152,11 +152,17 @@ int main()
 
     /* use 'float' if memory is limited, 'double' otherwise when fractional amounts are required or use 'int' */
 
-    /* Constants: const, macro and enum */
+    /* Constants types */
+    
     int s = 5; // literal constant
+
+    // const
     const int SS = 5; /* symbolic constant (immutable/read only) */
 
+    // macro #define
     cout << X << endl; // defined at top of file (C format)
-
     
+    // enum
+    enum { y = 100 }; // immutable
+    cout << y << endl;
 }   
