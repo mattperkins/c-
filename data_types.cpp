@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 
 using std::cout;
 using std::endl;
@@ -30,4 +31,13 @@ int main()
     cout << sizeof(unsigned int) << endl;
     cout << sizeof(unsigned long) << endl;
     cout << sizeof(unsigned long long) << endl;
+
+    cout << SHRT_MAX << endl;
+    cout << SHRT_MIN << endl;
+    /* unsigned version */
+    cout << USHRT_MAX << endl;
+
+    cout << INT_MAX << endl;
+    cout << INT_MIN << endl;
+
 }
