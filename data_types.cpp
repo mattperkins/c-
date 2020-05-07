@@ -6,7 +6,7 @@ using std::endl;
 
 int main()
 {   
-    /* INTEGRAL DATA TYPE */
+    /* INTEGRAL DATA TYPES */
 
     /* signed */
     short a; 
@@ -34,6 +34,10 @@ int main()
     cout << sizeof(unsigned long) << endl;
     cout << sizeof(unsigned long long) << endl;
 
+    cout << sizeof(char) << endl;
+
+    cout << "\n";
+
     /* uses #include <climits> at top of file */
     cout << SHRT_MAX << endl;
     cout << SHRT_MIN << endl;
@@ -55,6 +59,16 @@ int main()
     /* unsigned version */
     cout << ULLONG_MAX << endl;
 
-    /* CHAR DATA TYPE */
+    cout << "\n";
     
+    /* CHAR (Integral Data Type) */
+    /* Store small numbers or characters */
+    
+    // Single quotes only (Double quotes reserved for Strings)
+    char A = 'A'; // char literal
+    cout << A << endl;
+    cout << (int) A << endl; // cast as Int
+    char Z = 'Z'; // char literal
+    cout << Z << endl;
+    cout << (int) Z << endl; // cast as Int
 }   
