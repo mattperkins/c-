@@ -123,4 +123,7 @@ int main()
     cout << boolalpha << print_true << endl;
     cout << boolalpha << print_false << endl;
 
+    // if(is_true) cout << "This is true" << endl;
+
+    /* Floating Point and Numbers */
 }   
