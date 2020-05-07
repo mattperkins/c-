@@ -126,7 +126,7 @@ int main()
     // if(is_true) cout << "This is true" << endl;
 
     /* Floating Point and Numbers */
-    /* float, double long double */
+    /* float, double and long double */
     
     float ten_divide_three = 10.0 / 3;
     cout << ten_divide_three << endl;
@@ -146,4 +146,5 @@ int main()
     cout << FLT_DIG << endl; // float = 6 digit accuracy
     cout << DBL_DIG << endl; // double = 15 digit accuracy
     cout << LDBL_DIG << endl; // long double = 18 digit accuracy
+    /* If 18 points of accuracy aren't enough, as with something like banking, import an 'exact precision' library to guarantee every number is accurate. */
 }   
