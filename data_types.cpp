@@ -60,15 +60,37 @@ int main()
     cout << ULLONG_MAX << endl;
 
     cout << "\n";
-    
+
     /* CHAR (Integral Data Type) */
-    /* Store small numbers or characters */
+    /* Store small numbers (-127 to 127) or characters */
     
     // Single quotes only (Double quotes reserved for Strings)
-    char A = 'A'; // char literal
+    signed char A = 'A'; // char literal
     cout << A << endl;
     cout << (int) A << endl; // cast as Int
-    char Z = 'Z'; // char literal
+    signed char Z = 'Z'; // char literal
     cout << Z << endl;
     cout << (int) Z << endl; // cast as Int
+
+    signed char X = 88; // 88 equivalent to X on ascii table
+    cout << X << endl;
+    cout << (int) X << endl;
+
+    signed char B = 66; // 66 equivalent to B on ascii table
+    cout << B << endl;
+    cout << (int) B << endl;
+
+    signed char D = -127;
+    cout << (int) D << endl;
+
+    /* unsigned chars - (128-255) */
+    unsigned char xy = 128;
+    cout << (int) xy << endl;
+
+    unsigned char yx = 255;
+    cout << (int) yx << endl;
+
+    /* 
+        unicode: char16_t and char32_t are char data types which extend memory for characters beyond the above. (example: for international languages) 
+    */
 }   
