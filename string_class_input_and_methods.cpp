@@ -57,8 +57,8 @@ int main()
     foo.replace(9, 4, "bleep!"); // replace(index/letters/value)
     cout << foo << endl;
     
-
-
+    /* Return values or modifications */
+    // .find()
 
 
     // Backward compatibility reference:
