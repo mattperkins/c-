@@ -30,10 +30,30 @@ int main()
     cout << sentence << endl;
         // Note: cin.getline() is a different function used for getting user input numbers (int/double etc) not strings.
 
-    /* String Methods (member functions attached to objects(i.e strings)) */
-    cout << hello.length() << endl;
+    /* String Methods */
+    // Member functions attached to objects (i.e strings)
+    cout << hello.length() << endl; 
+    cout << hello.size() << endl; // same as length
 
+    // Modifiers
+    string modifyMe;
+    modifyMe = "marco";
+    // += does same as .append() 
+    modifyMe += " polo"; 
+    cout << modifyMe << endl;
+    modifyMe.insert(3, "           "); // start index and insert values
+    cout << modifyMe << endl;
+    modifyMe.erase(3, 9);  // start index and erase value
+    cout << modifyMe << endl; 
+    modifyMe.erase(3);  // start index and remove all subsequent
+    cout << modifyMe << endl; 
+    modifyMe.erase(modifyMe.length() -1); // remove last character
+    cout << modifyMe << endl; 
     
+
+
+
+
 
 
     // Backward compatibility reference:
