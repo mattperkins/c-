@@ -36,22 +36,27 @@ int main()
     cout << hello.size() << endl; // same as length
 
     // Modifiers
-    string modifyMe;
-    modifyMe = "marco";
+    string mod;
+    mod = "marco";
     // += does same as .append() 
-    modifyMe += " polo"; 
-    cout << modifyMe << endl;
-    modifyMe.insert(3, "           "); // start index and insert values
-    cout << modifyMe << endl;
-    modifyMe.erase(3, 9);  // start index and erase value
-    cout << modifyMe << endl; 
-    modifyMe.erase(3);  // start index and remove all subsequent
-    cout << modifyMe << endl; 
-    modifyMe.erase(modifyMe.length() -1); // remove last character
-    cout << modifyMe << endl; 
+    mod += " polo"; 
+    cout << mod << endl;
+    mod.insert(5, "            "); // start index and insert values
+    cout << mod << endl;
+    mod.erase(5, 6);  // start index and erase value
+    cout << mod << endl; 
+    mod.erase(5);  // start index and remove all subsequent
+    cout << mod << endl; 
+    mod.pop_back(); // remove last character
+    cout << mod << endl; 
+    mod.erase(mod.length() -2); // remove last two characters
+    cout << mod << endl; 
     
-
-
+    string foo;
+    foo = "what the heck";
+    foo.replace(9, 4, "bleep!"); // replace(index/letters/value)
+    cout << foo << endl;
+    
 
 
 
