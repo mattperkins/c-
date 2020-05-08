@@ -16,25 +16,32 @@ int main()
     hello += " you are so beautiful";
     cout << hello + "!" << endl;
 
-    /* methods = member functions attached to objects */
+    /* Note: */
+    /* std::cin doesn't work for getting user inputted strings */
+    // std::cin stops at first space in string
+        // Example:
+        // string user;
+        // cin >> user; // if user inputs: 'hello world'
+        // cout << user << endl; // only 'hello' is output
+    // So we use the getline function 
+    // Which allows multiple words and spaces
+    string sentence;
+    getline(cin, sentence);
+    cout << sentence << endl;
+        // Note: cin.getline() is a different function used for getting user input numbers (int/double etc) not strings.
+
+    /* String Methods (member functions attached to objects(i.e strings)) */
     cout << hello.length() << endl;
 
-    /* C Strings (backwards compatible with C) */
+    
+
+
+    // Backward compatibility reference:
+    // C Strings (From the C Language)
     char name[] = "betty"; 
     cout << name << endl;
     // a C style string is an array of characters
     // b,e,t,t,y and \0 (the null terminating character)
     // if reassigned will display the following error:
     // array type 'char [6]' is not assignable
-
-    // std::cin stops at first space in string
-    // string user;
-    // cin >> user; // if user inputs: 'hello world'
-    // cout << user << endl; // only 'hello' is output
-
-    // getline function allows multiple words and spaces
-    string sentence;
-    getline(cin, sentence);
-    cout << sentence << endl;
-
 }
