@@ -69,11 +69,10 @@ int main()
     double g;
     double h;
     g = 11;
-    (h = g) = 110; // y = x; y = 11;
+    (h = g) = 110; // force with () so: h = 110 and g = 11; 
     cout << g << "\t" << h << endl; // 11   110
     // direction of evaluation for assignment operator is right to left
     g = 10;
     h = g = 100; // h = (g=100);
     cout << g << "\t" << h << endl; // 100  100
-    
 }
