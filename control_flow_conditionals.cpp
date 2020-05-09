@@ -59,7 +59,7 @@ int main()
         cout << "Try again\n";
     }
 
-    // 
+    // contrived example for reference
     /* nested if example (same as &&) */
     if (true)
     {
