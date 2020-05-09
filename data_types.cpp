@@ -156,8 +156,8 @@ int main()
     
     int s = 5; // literal constant
 
-    // const
-    const int SS = 5; /* symbolic constant (immutable/read only) */
+    // symbolic constants = the variable SS below
+    const int SS = 5; // immutable/read only
 
     // macro #define
     cout << X << endl; // defined at top of file (C format)

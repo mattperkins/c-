@@ -87,7 +87,7 @@ int main()
     string bazMod = baz.substr(5,2); // index 5, 2 characters length
     cout << bazMod << endl;
 
-
+    
     // *****************************************************
     // -----------------------------------------------------
     // Backward compatibility reference:

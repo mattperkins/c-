@@ -25,4 +25,6 @@
 *   destructors
 *   polymorphism
 *   OOP
+    -   class (Instance of class = object)
+        -   methods (object gets class methods)
 *   memory management
