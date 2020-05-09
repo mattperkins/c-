@@ -205,10 +205,11 @@ int main()
     // base 8 (oct) to decimal
     int octNum = 030; // (6 + 3x8 = 24)
     cout << octNum << endl; // 24 -> 3 x 8
-    cout << oct << octNum << endl; // 18 
+    cout << oct << octNum << endl; // 18     
 
     // See also:
     // wchar_t (unicode / multiple language support)
     // char16_t (unicode / multiple language support)
     // char32_t (unicode / multiple language support)
+
 }   
