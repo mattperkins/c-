@@ -29,12 +29,13 @@ int main()
     cout << sentence << endl;
         // Note: cin.getline() is a different function used for getting user input numbers (int/double etc) not strings.
 
-    /* Modifying Strings with Operation Methods */
 
     /* String Methods */
     // Member functions attached to objects (i.e strings)
     cout << hello.length() << endl; 
     cout << hello.size() << endl; // same as length
+
+    /* Functions that modify strings with operation methods (changing the original variable value) */
 
     // Modifiers
     string mod;
@@ -59,6 +60,26 @@ int main()
     cout << foo << endl;
     
     
+    /* Functions that dont modify strings/variable values directly but return a value or modification */
+    // String Operation Methods
+    string bar;
+    bar = "what the hell";
+    bar.replace(bar.find("hell"), 4, "heaven");
+    cout << bar << endl;
+    cout << bar.find_first_of("aeiou") << endl; // 2 (index 2)
+    cout << bar.find_first_of("!") << endl; // npos or -1 (the giant number returned is an unsigned long which can only be a positive value and as the result is -1 it converts to the giant number)
+    
+
+    string baz;
+    baz = "what is up?";
+    string bazMod = baz.substr(5,2); // index 5, 2 characters length
+    cout << bazMod << endl;
+
+
+
+
+
+
     
     // *****************************************************
     // -----------------------------------------------------
