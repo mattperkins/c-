@@ -46,11 +46,11 @@ int main()
         Logical Operators: && || ! 
         Comparison Operators: == != < > <= >=
     */
-    if ( guess != answer ) // Anything but Betty
+    if ( guess == answer ) // Betty
     {
         cout << "Correct!\n";
     }
-    else if (age_guess == age) // equal to 50
+    else if (age_guess == age) // Equal to 50
     {
         cout << "Correct!\n";
     }
@@ -59,6 +59,15 @@ int main()
         cout << "Try again\n";
     }
 
+    // 
+    /* nested if example (same as &&) */
+    if (true)
+    {
+        if (true)
+        {
+            // result of both conditions being true
+        }
+    }
     return 0;
 }
 
