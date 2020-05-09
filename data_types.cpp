@@ -192,12 +192,20 @@ int main()
     // Octol base8 = multiple of 8 i.e 0-7 as follows:
     // 0,1,2,3,4,5,6,7,10,11,12,13,14,15,16,17,20,21,23,24...
     // so the number 24 = 3x8
+
+    /* Literals for Hex and Oct and base conversion to decimal */
+    int decNum = 30; // 3x10 -> base 10 (dec)
+    cout << decNum << endl; // 30
     
-    
+    // base 16 (hex) to decimal
+    int hexNum = 0x30; // (e=14 and 1x16 = 30)
+    cout << hexNum << endl; // 48 -> 3 x 16
+    cout << hex << decNum << endl; // 1e 
 
-
-
-
+    // base 8 (oct) to decimal
+    int octNum = 030; // (6 + 3x8 = 24)
+    cout << octNum << endl; // 24 -> 3 x 8
+    cout << oct << octNum << endl; // 18 
 
     // See also:
     // wchar_t (unicode / multiple language support)
