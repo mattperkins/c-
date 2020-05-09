@@ -42,7 +42,12 @@ int main()
     cout << "Guess the age\n";
     cin >> age_guess;
 
-    if (guess == answer && age_guess == age)
+    /* Operators: && || == != ! */
+    if ( guess != answer ) // Anything but Betty
+    {
+        cout << "Correct!\n";
+    }
+    else if (age_guess == age) // equal to 50
     {
         cout << "Correct!\n";
     }
