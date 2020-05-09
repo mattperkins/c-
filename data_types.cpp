@@ -180,10 +180,21 @@ int main()
     auto n = 5.0; // defaults to a double with no suffix
     auto o = 5.0L; // long double
 
-    // Hexidecimal (Hex) / Octol Numbers -> two different ways of counting
-    // Hex base16 = multiple of 16 i.e 0-15 as follows:
-    // 1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+    // As a reference for this section, decimal is multiple of 10 
+    // so the number 24 = 4x1 and 2x10
     
+    /* Hexidecimal (Hex) and Octol Numbers -> two different ways of counting */
+
+    // Hex base16 = multiple of 16 i.e 0-15 as follows:
+    // 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F,10,11,12,13,14,15,16,17,18,19,1A,1B,1C,1D,1E,1F,20,21,22,23,24,25,26,27,28,29,2A,2B...
+    // so the number 24 = 8x1 and 1x16
+
+    // Octol base8 = multiple of 8 i.e 0-7 as follows:
+    // 0,1,2,3,4,5,6,7,10,11,12,13,14,15,16,17,20,21,23,24...
+    // so the number 24 = 3x8
+    
+    
+
 
 
 
