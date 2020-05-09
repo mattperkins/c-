@@ -68,7 +68,9 @@ int main()
     cout << bar << endl;
     cout << bar.find_first_of("aeiou") << endl; // 2 (index 2)
     cout << bar.find_first_of("!") << endl; // npos or -1 (the giant number returned is an unsigned long which can only be a positive value and as the result is -1 it converts to the giant number)
-    
+    // see example below:
+    unsigned long negOne = -1;
+    cout << negOne << endl;
 
     string baz;
     baz = "what is up?";
