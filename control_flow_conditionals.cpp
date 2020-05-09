@@ -8,9 +8,21 @@ int main()
     // branching -> conditions
         // if statements
         // switch statements
-    if(expression)
+    int age = 18;
+    if(age < 18)
     {
-        // code
+        cout << "You are not old enough" << endl;
+        return  -1;
+    }
+    else if(age > 30)
+    {
+        cout << "You are too old" << endl;
+        return  -1;
+    } 
+    else
+    {
+        cout << "Welcome to the club!" << endl;
+        return  -1;
     }
 
     return 0;
