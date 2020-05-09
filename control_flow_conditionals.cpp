@@ -42,7 +42,10 @@ int main()
     cout << "Guess the age\n";
     cin >> age_guess;
 
-    /* Operators: && || == != ! */
+    /* 
+        Logical Operators: && || ! 
+        Comparison Operators: == != < > <= >=
+    */
     if ( guess != answer ) // Anything but Betty
     {
         cout << "Correct!\n";
