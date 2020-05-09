@@ -13,12 +13,11 @@ int main()
     cout << hello[1] << endl; // e
     
     // String concatenation
-    hello += " you are so beautiful";
+    hello += " \vnow input some text below";
     cout << hello + "!" << endl;
 
     /* Note: */
-    /* std::cin doesn't work for getting user inputted strings */
-    // std::cin stops at first space in string
+    /* std::cin doesn't work for getting user inputted strings as it stops at first space in string */
         // Example:
         // string user;
         // cin >> user; // if user inputs: 'hello world'
@@ -29,6 +28,8 @@ int main()
     getline(cin, sentence);
     cout << sentence << endl;
         // Note: cin.getline() is a different function used for getting user input numbers (int/double etc) not strings.
+
+    /* Modifying Strings with Operation Methods */
 
     /* String Methods */
     // Member functions attached to objects (i.e strings)
@@ -57,10 +58,10 @@ int main()
     foo.replace(9, 4, "bleep!"); // replace(index/letters/value)
     cout << foo << endl;
     
-    /* Return values or modifications */
-    // .find()
-
-
+    
+    
+    // *****************************************************
+    // -----------------------------------------------------
     // Backward compatibility reference:
     // C Strings (From the C Language)
     char name[] = "betty"; 
