@@ -71,6 +71,16 @@ int main()
     // see example below:
     unsigned long negOne = -1;
     cout << negOne << endl;
+    // using -1 (npos) as a conditional check
+    if(bar.find_first_of("!") == -1) cout << "NOT FOUND" << endl;
+
+    if(bar.compare("what the hell")) cout << "FOUND" << endl;
+    
+    // returns 0 if values are equal
+    if(bar.compare("what the heaven") == 0) cout << "EQUAL" << endl;
+    
+    // double equals preferred method (over .compare) in C++
+    if(bar == "what the heaven") cout << "MATCH" << endl;
 
     string baz;
     baz = "what is up?";
