@@ -43,16 +43,37 @@ int main()
     cout << round(-3.51) << endl; // round value to -4 (rounds up)
     /* use nearby int function if round not suitable */
 
-    /* Operator, Precendence and Associativity */
+    /* Operators */
     
     // Arithmetic operators (+, -, *, /, %)
     // 5 + 5 -> the 5's are operands and the plus sign(+) is the operator
     int k = 3; // the equals sign(=) is the assignment operator
     int l = 5 + 5; // expression assigning 10 to L
     int m = 10 / 4; // int division results = 2 (not floating point 2.5)
-    cout << m << endl;
+    cout << m << endl; // 2
     double n = 10.0 / 4; // uses double division and assigns it as floating point value in a double = 2.5 (important: must be 10. or 10.0 as even if 'double' assigned to 10 it will still = 2)
-    cout << n << endl;
+    cout << n << endl; // 2.5
     double o = 10 % 4; // modulus = divide and keep remainder (4 goes into 10 twice, with 2 left over)
-    cout << o << endl;
+    cout << o << endl; // 2
+
+    /* Operator Precendence */
+    // order in which things get evaluated/ order of operations */
+    double j = 10 + (4.0 / 3); // 4 / 3 + 10
+    cout << j << endl; // 11.3333
+
+    /* Operator Associativity */
+    // direction of evaluation for arithemtic operator is left to right
+    double i = (10 * 4) * 3;
+    cout << i << endl; // 120
+
+    double g;
+    double h;
+    g = 11;
+    (h = g) = 110; // y = x; y = 11;
+    cout << g << "\t" << h << endl; // 11   110
+    // direction of evaluation for assignment operator is right to left
+    g = 10;
+    h = g = 100; // h = (g=100);
+    cout << g << "\t" << h << endl; // 100  100
+    
 }
