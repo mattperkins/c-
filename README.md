@@ -4,6 +4,7 @@ V@2:47:57
 
 ```
   g++ filename.cpp
+  g++ filename.cpp -std=c++11
 ```
 
 ## Execute

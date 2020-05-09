@@ -152,7 +152,7 @@ int main()
 
     /* use 'float' if memory is limited, 'double' otherwise when fractional amounts are required or use 'int' */
 
-    /* Constants types */
+    /* Integral Constants types */
     
     int s = 5; // literal constant
 
@@ -165,4 +165,31 @@ int main()
     // enum
     enum { y = 100 }; // immutable
     cout << y << endl;
+
+    /* String Constants */
+
+    // Quoted constants
+    char J = 'c'; // characters (single quotes)
+    string K =  "c"; // strings (double quotes
+
+    // auto looks at the constant value and makes it the data type of the variable (j,k,l,m,n) / auto determins the data type of the variable based on the constant literal value -> U,UL,ULL,F,L
+    auto j = 5U; // j = an unsigned integer
+    auto k = 6UL; // k = unsigned long
+    auto l = 4ULL; // l = unsigned long long
+    auto m = 5.0F; // float
+    auto n = 5.0; // defaults to a double with no suffix
+    auto o = 5.0L; // long double
+
+    // Hexidecimal (Hex) / Octol Numbers -> two different ways of counting
+    // Hex base16 = multiple of 16 i.e 0-15 as follows:
+    // 1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+    
+
+
+
+
+    // See also:
+    // wchar_t (unicode / multiple language support)
+    // char16_t (unicode / multiple language support)
+    // char32_t (unicode / multiple language support)
 }   

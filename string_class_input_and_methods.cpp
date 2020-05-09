@@ -88,15 +88,11 @@ int main()
     cout << bazMod << endl;
 
 
-
-
-
-
-    
     // *****************************************************
     // -----------------------------------------------------
     // Backward compatibility reference:
     // C Strings (From the C Language)
+    // ignores the single quote rule as its an array
     char name[] = "betty"; 
     cout << name << endl;
     // a C style string is an array of characters
