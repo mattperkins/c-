@@ -1,5 +1,3 @@
-v@3:51.07
-
 ## Compile
 
 ```
@@ -19,8 +17,8 @@ v@3:51.07
     -   definitions
 
 *   **data types**
+*   **if statements**
 *   loops
-*   if statements
 *   classes
 *   inheritance
 *   constructors
